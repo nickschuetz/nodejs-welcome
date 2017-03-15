@@ -7,7 +7,7 @@ var healthy=true;
 const app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello OpenShift Container Platform!! <br><br>Application version: <b>B</b> <br>Hostname: <b>' + os.hostname() + '\n</b>');
+  res.send('Hello OpenShift Container Platform!! <br><br>Application version: <b>A</b> <br>Hostname: <b>' + os.hostname() + '\n</b>');
 });
 
 app.get('/healthz', function (req, res) {
